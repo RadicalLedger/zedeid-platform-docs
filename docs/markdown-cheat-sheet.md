@@ -1,6 +1,6 @@
 # Markdown Cheat Sheet
 
-> This is intend to use from your code editor. Visit [Markdown Cheetsheet](https://www.markdownguide.org/cheat-sheet/) to check the syntax on a browser
+> This supposed to be viewed from a code editor (like [Atom](https://atom.io)). Visit [Markdown Cheetsheet](https://www.markdownguide.org/cheat-sheet/) if you wish to view the syntax on a browser
 
 Thanks for visiting [The Markdown Guide](https://www.markdownguide.org)!
 
