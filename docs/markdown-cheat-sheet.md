@@ -1,6 +1,6 @@
 # Markdown Cheat Sheet
 
-> Visit [Markdown Cheetsheet](https://www.markdownguide.org/cheat-sheet/) or check this file in your Code Editor for syntax
+> This is intend to use from your code editor. Visit [Markdown Cheetsheet](https://www.markdownguide.org/cheat-sheet/) to check the syntax on a browser
 
 Thanks for visiting [The Markdown Guide](https://www.markdownguide.org)!
 
