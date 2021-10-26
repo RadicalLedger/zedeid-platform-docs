@@ -4,4 +4,7 @@ theme:
 docs_dir: docs
 pages:
   - 'index.md'
+  - 'zedeid-did-siop-lib.md'
+  - 'zedeid-vcsd-lib.md'
+  - 'zedeid-hdk-wallet.md'      
   - 'markdown-cheat-sheet.md'
