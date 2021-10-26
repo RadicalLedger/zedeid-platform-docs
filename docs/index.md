@@ -9,10 +9,10 @@ ZeDeId is a collection of tools to provide better privacy for online users. ZeDe
  - SIOP Authentication
  - Verifiable Credentials
 
- ## Libraries
- - zedeid-did-siop-lib
- Self Issued OpenIDConnect Provider with Decentralised Identities. This library implements all necessary function to authenticate users with DID SIOP. Could be used in both Node and Browser environments 
- - zedeid-vcsd-lib
- Verifiable Credentials with Selective Disclosure. Utility library to generate, present and verify Verifiable Credentials. Furhter implements functions to selectively disclose attributes of VCs. 
- - zedeid-hdk-wallet
- Identitiy Wallet with Hierarchichally Deterministic Keys (HD Keys). Wrapper around functionalities to generate and manage HD Keys
+## Libraries
+- zedeid-did-siop-lib
+Self Issued OpenIDConnect Provider with Decentralised Identities. This library implements all necessary function to authenticate users with DID SIOP. Could be used in both Node and Browser environments 
+- zedeid-vcsd-lib
+Verifiable Credentials with Selective Disclosure. Utility library to generate, present and verify Verifiable Credentials. Furhter implements functions to selectively disclose attributes of VCs. 
+- zedeid-hdk-wallet
+Identitiy Wallet with Hierarchichally Deterministic Keys (HD Keys). Wrapper around functionalities to generate and manage HD Keys
