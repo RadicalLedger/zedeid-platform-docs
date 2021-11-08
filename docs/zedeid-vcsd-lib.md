@@ -2,7 +2,7 @@
 
 Package for issue, present and verify selectively disclossable verifiable credentials.
 
-## Inastallation
+## Installation
 
 1. Clone repository
 2. run *npm run build* 

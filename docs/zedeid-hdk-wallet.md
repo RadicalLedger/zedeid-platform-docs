@@ -1,7 +1,7 @@
 # zedeid-hdk-wallet
 A wrapper package of bip32 and bip39 to generate ethr decentralized IDs
 
-## Inastallation
+## Installation
 
 1. Clone repository
 2. run *npm run build* 
