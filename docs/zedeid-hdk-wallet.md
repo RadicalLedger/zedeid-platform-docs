@@ -8,169 +8,167 @@ A wrapper package of bip32 and bip39 to generate ethr decentralized IDs
 3. npm install < local repository directory >
 
 ## Usage
-
+---
 ### generateMnemonic
 
-import { generateMnemonic } from 'did-hd-wallet';
+Generate a random mnemonic with a given strength to represent a private key. This is a root key for a set of hierachically deterministic keys (HD Keys).
 
-generate random mnemonic.
+```import { generateMnemonic } from 'did-hd-wallet';```
+
 
 #### Parameters
 
-1. strength : number - Integer between 128 - 256.
+- strength : number - Integer between 128 - 256.
 
 #### Returns
 
-1. mnemonic: string - mnemonic words range from 12 to 24.
+- mnemonic: string - mnemonic words.  Either 12 to 24 depending on the strength specified (for 128 or 256 respectively).
 
+
+---
 ### validateMnemonic
 
-import { validateMnemonic } from 'did-hd-wallet';
+Validates a given mnemonic string.
 
-validate mnemonic string.
+```import { validateMnemonic } from 'did-hd-wallet';```
 
 #### Parameters
 
-1. mnemonic : string - Mnemonic string.
+- mnemonic : string - Mnemonic string.
 
 #### Returns
 
-1. validity: boolean - whether mnemonic string is valid or not.
+- validity: boolean - whether mnemonic string is valid or not.
 
-
+---
 ### getSeedFromMnemonic
+Gets the seed from mnemonic words.
 
-import { getSeedFromMnemonic } from 'did-hd-wallet';
-
-get seed from mnemonic words.
+```import { getSeedFromMnemonic } from 'did-hd-wallet';```
 
 #### Parameters
 
-1. mnemonic : string - valid mnemonic phrase.
+- mnemonic : string - valid mnemonic phrase.
 
 #### Returns
 
-1. seed: string - hex encoded seed.
+- seed: string - hex encoded seed.
 
+---
 ### publicKeyToETH
 
-import { publicKeyToETH } from 'did-hd-wallet';
+Gets the ethereum address of a public key.
 
-get ethereum address of a public key.
+```import { publicKeyToETH } from 'did-hd-wallet';```
 
 #### Parameters
 
-1. publicKey : string - public key.
+- publicKey : string - public key.
 
 #### Returns
 
-1. ethereumAddress: string - Ethereum address corresponding to the public key.
+- ethereumAddress: string - Ethereum address corresponding to the public key.
 
-
+---
 ### getDID
+Gets the ethereum decentralized ID (DID) of an Ethereum address.
 
-import { getDID } from 'did-hd-wallet';
-
-get ethereum decentralized id of an Ethereum address.
+```import { getDID } from 'did-hd-wallet';```
 
 #### Parameters
 
-1. address : string - Ethereum adress of which the DID is needed.
+- address : string - Ethereum adress of which the DID is needed.
 
 #### Returns
 
-1. DID: string - Ethereum DID.
+- DID: string - Ethereum DID.
 
+---
 ### createRandomETHDID
 
-import { createRandomETHDID } from 'did-hd-wallet';
+Generates a random Ethereum address.
 
-generate random Ethereum address.
+```import { createRandomETHDID } from 'did-hd-wallet';```
 
 #### Parameters
 
-none
+- none
 
 #### Returns
 
-1. ethereumAddress: string - random Ethereum address.
+- ethereumAddress: string - random Ethereum address.
 
+---
 ### createETHDIDFromPrivateKey
+Derives an ethereum address from a private key.
 
-import { createETHDIDFromPrivateKey } from 'did-hd-wallet';
-
-get ethereum address from a private key.
+```import { createETHDIDFromPrivateKey } from 'did-hd-wallet';```
 
 #### Parameters
 
-1. privateKey : string - valid private key.
+- privateKey : string - valid private key.
 
 #### Returns
 
-1. ethereumAddress: string - Ethereum address corresponding to the private key.
+- ethereumAddress: string - Ethereum address corresponding to the private key.
 
-### Wallet Class
+## Wallet Class
+Functions related to wallet management
 
-import Wallet from 'did-hd-wallet';
+```import Wallet from 'did-hd-wallet';```
 
-#### Public methods
+---
+### getMasterPrivateKey
 
-##### getMasterPrivateKey
+#### Parameters
 
-##### Parameters
+- none
 
-None
+#### Returns
 
-##### Returns
+- masterPrivateKey: string - hex encoded master private key.
 
-1. masterPrivateKey: string - hex encoded master private key.
-
-##### getMasterPublicKey
-
-##### Parameters
-
-None
-
-##### Returns
-
-1. masterPublicKey: string - hex encoded master public key.
-
-##### getMasterChainCode
-
-##### Parameters
-
-None
+---
+### getMasterPublicKey
+Retreives the master public key related to the master key of the wallet.
+#### Parameters
+- none
 
 ##### Returns
+- masterPublicKey: string - hex encoded master public key.
 
-1. masterChainCode: string - hex encoded master chain code.
+---
+### getMasterChainCode
+Retreives the chaincode related to the master key of the wallet.
+#### Parameters
+- none
 
-##### getMasterMnemonic
+#### Returns
+- masterChainCode: string - hex encoded master chain code.
 
-##### Parameters
+---
+### getMasterMnemonic
+Retreives the mnemonic related to the master key of the wallet.
+#### Parameters
+- none
 
-None
+#### Returns
+- masterMnemonic: string - master mnemonic phrase.
 
-##### Returns
+---
+### getChildKeys
+Retreives the child key details for a given derivation path.
+#### Parameters
+- path: string - valid derivation path.
 
-1. masterMnemonic: string - master mnemonic phrase.
+#### Returns
+- childKeys: object - JS object containing child private key, child public key, child chain code, base58 representation of child node, WIF representation of child node, Ethereum address and ETH DID .
 
-##### getChildKeys
+---
+### getMasterKeys
+Retreives the master key details of the wallet.
+#### Parameters
+- none
 
-##### Parameters
-
-1. path: string - valid derivation path.
-
-##### Returns
-
-1. childKeys: object - JS object containing child private key, child public key, child chain code, base58 representation of child node, WIF representation of child node, Ethereum address and ETH DID .
-
-##### getMasterKeys
-
-##### Parameters
-
-None
-
-##### Returns
-
-1. childKeys: object - JS object containing master private key, master public key, master chain code, base58 representation of master node, WIF representation of master node, Ethereum master Ethereum address and master ETH DID..
+#### Returns
+- childKeys: object - JS object containing master private key, master public key, master chain code, base58 representation of master node, WIF representation of master node, Ethereum master Ethereum address and master ETH DID..
