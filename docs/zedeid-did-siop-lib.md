@@ -9,6 +9,13 @@ Following are the primary specifications followed by this implementation.
 
 Additionally this library can be used in authentication code flow 
 
+## Availability
+- Source Code on [GitHub](https://github.com/RadicalLedger/zedeid-did-siop-lib)
+- For Node.js via [npm](https://www.npmjs.com/package/@zedeid-sdk/zedeid-did-siop-lib)
+- For Browser via [jsdelivr](https://cdn.jsdelivr.net/npm/@zedeid-sdk/zedeid-did-siop-lib/dist/browser/did-siop.js)
+- Sample Implementation on [GitHub](https://github.com/RadicalLedger/did-siop-rp-web-min)
+
+
 ## Usage (Implicit flow) ##
 ### RP ###
 

@@ -3,8 +3,10 @@
 Package for issue, present and verify selectively disclossable verifiable credentials.
 
 ## Availability
+- Source Code on [GitHub](https://github.com/RadicalLedger/zedeid-vcsd-lib)
 - For Node.js via [npm](https://www.npmjs.com/package/@zedeid-sdk/sd-vc-lib)
 - For Browser via [jsdelivr](https://cdn.jsdelivr.net/npm/@zedeid-sdk/sd-vc-lib/dist/browser/zedeid-vcsd.js)
+- Sample Implementation on [GitHub](https://github.com/RadicalLedger/vcsd-lib-sample)
 
 ## Installation
 
