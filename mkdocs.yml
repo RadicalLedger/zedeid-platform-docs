@@ -1,4 +1,4 @@
-site_name: RTD Playground
+site_name: ZeDeId Platform
 theme:
     name: readthedocs
 docs_dir: docs
